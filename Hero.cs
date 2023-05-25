@@ -9,15 +9,15 @@ namespace Design_Patterns_Strategy_CSHARP
 {
     public class Hero
     {
-        private readonly string Name;
-        private IWeapon? Weapon;
+        private readonly string Name; // Имя героя
+        private IWeapon? Weapon;      // Свойство интерфейса, используется для того чтобы динамический подставлять необходимое оружие.  
 
         public Hero(string name)
         {
             this.Name = name;
         }
 
-        public void SetWeapon(IWeapon weapon)
+        public void SetWeapon(IWeapon weapon) // В метод подставляем оружие и присваем его герою
         {
             Weapon = weapon;
         }

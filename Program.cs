@@ -12,7 +12,7 @@ namespace Design_Patterns_Strategy_CSHARP
 
             hero.Attack();
 
-            hero.SetWeapon(new WaterGun());
+            hero.SetWeapon(new WaterGun()); // В качестве входящего параметра, передаем класс с необходимым оружием (этот класс должен реализовать ОБЩИЙ ИНТЕРФЕЙС)
 
             hero.Attack();
         }
